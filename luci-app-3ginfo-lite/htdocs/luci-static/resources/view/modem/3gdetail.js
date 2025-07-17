@@ -932,7 +932,7 @@ simDialog: baseclass.extend({
 				}
 		}		
 
-		var info = _('More information about the 3ginfo on the %seko.one.pl forum%s.').format('<a href="https://eko.one.pl/?p=openwrt-3ginfo" target="_blank">', '</a>');
+		var info = _('').format('');
 		m = new form.JSONMap(this.formdata, _('3ginfo-lite'), info);
 
 		s = m.section(form.TypedSection, '3ginfo', '', null);

@@ -138,7 +138,7 @@ return view.extend({
 			]);
 
 
-		var info = _('More information about the 3ginfo on the %seko.one.pl forum%s.').format('<a href="https://eko.one.pl/?p=openwrt-3ginfo" target="_blank">', '</a>');
+		var info = _('').format('');
 
 		var view = E('div', { 'class': 'cbi-map'}, [
 			E('h2', {}, [ _('Diagnostics') ]),
