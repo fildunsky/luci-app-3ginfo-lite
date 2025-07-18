@@ -1138,65 +1138,6 @@ simDialog: baseclass.extend({
 		s.anonymous = true;
 		s.addremove = false;
 
-		s.tab('opt1', _('BTS Search'));
-		s.anonymous = true;
-
-		o = s.taboption('opt1', form.Button, '_search');
-		o.title      = _('Search BTS using Cell ID');
-		o.inputtitle = _('Search');
-		o.onclick = function() {
-
-		return uci.load('3ginfo').then(function() {
-		var searchsite = (uci.get('3ginfo', '@3ginfo[0]', 'website'));
-
-			if (searchsite.includes('btsearch')) {
-			//http://www.btsearch.pl/szukaj.php?mode=std&search=CellID
-			
-				var id_dec = json.cid_dec;
-				var id_hex = json.cid_hex;
-				var id_dec_conv = parseInt(id_hex, 16);
-
-				if ( id_dec.length > 2 ) {
-					window.open(searchsite + id_dec);
-				}
-				else {
-					window.open(searchsite + id_dec_conv);
-				}
-			}
-
-			if (searchsite.includes('lteitaly')) {
-			//https://lteitaly.it/internal/map.php#bts=MCCMNC.CellIDdiv256
-
-			var zzmnc = json.operator_mnc;
-			var first = zzmnc.slice(0, 1);
-			var second = zzmnc.slice(1, 2);
-			var zzcid = Math.round(json.cid_dec/256);
-				if ( zzmnc.length == 3 ) {
-					if (first.includes('0')) {
-					var cutmnc = zzmnc.slice(1, 3);
-					}
-					if (first.includes('0') && second.includes('0')) {
-					var cutmnc = zzmnc.slice(2, 3);
-					}
-				}
-				if ( zzmnc.length == 2 ) {
-					var first = zzmnc.slice(0, 1);
-					if (first.includes('0')) {
-						var cutmnc = zzmnc.slice(1, 2);
-						}
-					else {
-					var cutmnc = zzmnc;
-						}
-					}
-				if ( zzmnc.length < 2 || !first.includes('0') && !second.includes('0')) {
-				var cutmnc = zzmnc;
-				}
-
-			window.open(searchsite + json.operator_mcc + cutmnc + '.' + zzcid);
-			}
-    		});
-		};
-
 		return m.render();
 	},
 
