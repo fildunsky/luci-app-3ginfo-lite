@@ -2,7 +2,7 @@ msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
 msgid "Information about 3G/4G/5G connection"
-msgstr "Информация о статусе соединения 3G/4G/5G"
+msgstr "Информация"
 
 msgid "More information about the 3ginfo on the %seko.one.pl forum%s."
 msgstr "Вся информация о 3ginfo на %sforum eko.one.pl%s."
@@ -221,3 +221,15 @@ msgstr "Подсказка"
 
 msgid "CLICK ME TO SEE NEW MENU"
 msgstr "НАЖМИ МЕНЯ ЧТОБЫ УВИДЕТЬ НОВОЕ МЕНЮ"
+
+msgid "Execution of various commands to check the availability of the modem and eliminate errors in the data collected by the scripts."
+msgstr "Выполнение разных команд для проверки доступности модема и выявления ошибок через скрипты."
+
+msgid "Check availability of ttyX ports."
+msgstr "Проверка доступности ttyX портов."
+
+msgid "Check data read by the 3ginfo scripts."
+msgstr "Проверка данных скриптами 3ginfo."
+
+msgid "Show devices"
+msgstr "Показать устройства"
