@@ -553,20 +553,19 @@ simDialog: baseclass.extend({
 
 					var p = (json.signal);
 					if (p < 0)
-						icon = L.resource('icons/signal-none.svg');
+						icon = L.resource('icons/mobile-signal-000-000.svg');
 					else if (p == 0)
-						icon = L.resource('icons/signal-none.svg');
-					else if (p < 25)
-						icon = L.resource('icons/signal-000-025.svg');
+						icon = L.resource('icons/mobile-signal-000-000.svg');
+					else if (p < 20)
+						icon = L.resource('icons/mobile-signal-000-020.svg');
+					else if (p < 40)
+						icon = L.resource('icons/mobile-signal-020-040.svg');
 					else if (p < 60)
-						icon = L.resource('icons/signal-025-050.svg');
-					else if (p < 75)
-						icon = L.resource('icons/signal-050-075.svg');
+						icon = L.resource('icons/mobile-signal-040-060.svg');
 					else if (p < 80)
-						icon = L.resource('icons/signal-075-100.svg');
+						icon = L.resource('icons/mobile-signal-060-080.svg');
 					else
-						icon = L.resource('icons/signal-075-100.svg');
-
+						icon = L.resource('icons/mobile-signal-080-100.svg');
 
 					if (document.getElementById('signal')) {
 						var view = document.getElementById("signal");
