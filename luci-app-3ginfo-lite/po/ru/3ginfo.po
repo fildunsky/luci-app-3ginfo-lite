@@ -41,25 +41,25 @@ msgid "Connection statistics"
 msgstr "Статистика соединения"
 
 msgid "Modem type"
-msgstr "Тип модема"
+msgstr "Имя модема"
 
 msgid "Additional information"
 msgstr "Дополнительная информация"
 
 msgid "Revision / Firmware"
-msgstr "Ревизия / Прошивка"
+msgstr "Версия прошивки"
 
 msgid "IP adress / Communication Port"
-msgstr "Адрес IP / Порт связи"
+msgstr "IP адрес или порт связи с модемом"
 
 msgid "Chip Temperature"
 msgstr "Температура чипа"
 
 msgid "Configuration 3ginfo-lite"
-msgstr "Конфигурация 3ginfo-lite"
+msgstr "Настройки"
 
 msgid "Configuration panel for the 3ginfo-lite application."
-msgstr "Панель конфигурации приложения 3ginfo-lite."
+msgstr "Выберите интерфейс и порт вашего модема"
 
 msgid "Network"
 msgstr "Сеть"
